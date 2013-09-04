@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Display elapsed time in human readable format
+# Display elapsed seconds in human readable format
 
 format_time()
 {
@@ -59,3 +59,12 @@ format_time()
         echo ""
     fi
 }
+export -f format_time
+
+floor()
+{
+    float_in=$1
+    floor_val=${float_in/.*}
+    echo $floor_val
+}
+export -f floor

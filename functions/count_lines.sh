@@ -6,3 +6,4 @@ count_lines()
 {
     wc -l "$1" | sed "s/ *\([0-9]*\).*/\1/"
 }
+export -f count_lines
